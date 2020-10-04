@@ -1,0 +1,149 @@
+@import "variables";
+
+.el-tabs .el-tabs__header {
+    border-bottom-color: $chigh !important;
+    background-color: $csecondary;
+}
+.el-tabs .el-tabs__nav {
+    border: none !important;
+}
+.el-tabs .el-tabs__item {
+    user-select: none;
+    color: $clightfont !important;
+    border-left-color: $cborder !important;
+    &.is-active {
+        color: $chigh !important;
+        border-bottom-color: transparent !important;
+        background-color: $cprimary;
+    }
+}
+.el-collapse {
+    border-color: $cborder !important;
+    .el-collapse-item__header {
+        color: $clightfont;
+        border-color: $cborder;
+        background-color: $csecondary;
+        padding-left: 0.5rem;
+    }
+    .el-collapse-item__wrap {
+        border-color: $cborder;
+        background-color: transparent;
+        padding-right: 0.5rem;
+    }
+    .el-collapse-item__content {
+        padding: 18px 0 0;
+    }
+}
+.el-input {
+    .el-input__inner {
+        color: $clightfont !important;
+        border-color: $cborder !important;
+        background-color: transparent !important;
+    }
+}
+.el-radio {
+    &.is-checked {
+        .el-radio__inner {
+            border-color: $chigh !important;
+            background-color: $chigh !important;
+        }
+        .el-radio__label {
+            color: $chigh !important;
+        }
+    }
+    .el-radio__label {
+        color: $clightfont !important;
+    }
+    .el-radio__inner {
+        border-color: $clightfont !important;
+        background-color: transparent !important;
+        &::after {
+            background-color: $cprimary;
+        }
+    }
+}
+.el-color-picker {
+    vertical-align: top;
+    .el-color-picker__trigger {
+        border-color: $cborder;
+    }
+}
+.el-slider {
+    padding: 0 0.5rem;
+    .el-slider__runway {
+        margin: 11px 0;
+        background-color: $clightfont;
+    }
+    .el-slider__button-wrapper {
+        width: 28px;
+        height: 28px;
+        top: -11px;
+    }
+    .el-slider__button {
+        border-color: $chigh;
+        background-color: $cprimary;
+    }
+    .el-slider__bar {
+        background-color: $chigh;
+    }
+}
+.el-divider {
+    background-color: $cborder !important;
+    .el-divider__text {
+        color: $clightfont;
+        background-color: $cprimary !important;
+    }
+}
+.el-button {
+    background-color: $cprimary !important;
+    border-color: $chigh !important;
+    color: $clightfont !important;
+    &.selected {
+        background-color: $chigh !important;
+        color: $csecondary !important;
+    }
+    &.el-button--primary {
+        background-color: #409EFF !important;
+        border-color: #409EFF !important;
+        color: #FFF !important;
+    }
+    &.el-button--info {
+        background-color: #909399 !important;
+        border-color: #909399 !important;
+        color: #FFF !important;
+    }
+}
+.el-textarea {
+    &__inner {
+        background-color: $cprimary !important;
+        border-color: $cborder !important;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: $csecondary;
+    border-radius: 6px;
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: $chigh;
+    border-radius: 6px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $chigh; 
+}
